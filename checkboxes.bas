@@ -7,7 +7,7 @@ Sub addcheckboxes()
     For Each cell In Selection
         
         Set cb = ActiveSheet.checkboxes.Add(cell.Left, cell.Top, 60, 20)
-        cb.Caption = "Apple"
+        cb.Caption = ""
         cb.LinkedCell = cell.Address
         cell.NumberFormat = ";;;"
         
